@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { HOMEURL } from "../constant/config";
 // import { HOMEURL } from "../constant/config";
 
 function JobCard(props: any) {
@@ -11,7 +12,7 @@ function JobCard(props: any) {
   return (
     <div
       onClick={() => {
-        navigate(`/job/${props.job.id}`);
+        navigate(HOMEURL+`/job/${props.job.id}`);
       }}
       className="border p-4 rounded-md w-[430px] space-y-4 cursor-pointer"
     >
