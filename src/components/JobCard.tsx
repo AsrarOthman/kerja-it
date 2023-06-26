@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { HOMEURL } from "../constant/config";
-// import { HOMEURL } from "../constant/config";
+
 
 function JobCard(props: any) {
   const date = new Date(props.job.post_date);

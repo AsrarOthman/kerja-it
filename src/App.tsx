@@ -3,7 +3,6 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Job from "./pages/Job";
 import { HOMEURL } from "./constant/config";
 
-
 function App() {
   const router = createBrowserRouter([
     {
@@ -11,7 +10,7 @@ function App() {
       element: <Home />,
     },
     {
-      path: HOMEURL+"/job:id",
+      path: HOMEURL + "/job/:id",
       element: <Job />,
     },
   ]);
